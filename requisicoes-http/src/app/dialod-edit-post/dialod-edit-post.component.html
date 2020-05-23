@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Edit Post</h1>
+
+<div  mat-dialog-content fxLayout="column" fxLayoutAlign="space-around stretch" >
+
+  <mat-form-field >
+    <input matInput placeholder="Post Title" [(ngModel)]="post.title" type="text">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Body"  [(ngModel)]="post.body" type="text"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Id user"  [(ngModel)]="post.userId" type="number">
+  </mat-form-field>
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-button [mat-dialog-close]="post" cdkFocusInitial>Save</button>
+</div>
