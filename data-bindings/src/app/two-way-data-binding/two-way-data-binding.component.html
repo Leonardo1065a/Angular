@@ -1,0 +1,48 @@
+<section>
+  <mat-card>
+    <mat-card-content>
+      <form>
+        <mat-form-field class="example-two-way">
+          <input matInput placeholder="Enter your name" [(ngModel)]="name1" name="anyname1">
+        </mat-form-field>
+        <mat-form-field class="example-two-way">
+          <input matInput placeholder="Enter your name" [(ngModel)]="name2" name="anyname2">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>{{ name1 }}</p>
+      <p>{{ name2 }}</p>
+    </mat-card-actions>
+  </mat-card>
+</section>
+
+<section>
+  <mat-card>
+    <mat-card-title>
+      Client
+    </mat-card-title>
+    <mat-card-content>
+      <form>
+        <mat-form-field class="example-two-way">
+          <input matInput placeholder="First name" [(ngModel)]="client.firstName" name="firstName">
+        </mat-form-field>
+        <mat-form-field class="example-two-way">
+          <input matInput placeholder="Last name" [(ngModel)]="client.lastName" name="lastName">
+        </mat-form-field>
+        <mat-form-field class="example-two-way">
+          <input matInput placeholder="Address" [(ngModel)]="client.address" name="address">
+        </mat-form-field>
+        <mat-form-field class="example-two-way">
+          <input matInput placeholder="Age" [(ngModel)]="client.age" name="age">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>Name: {{ client.firstName }}</p>
+      <p>Last Name: {{ client.lastName }}</p>
+      <p>Address: {{ client.address }}</p>
+      <p>Age: {{ client.age }}</p>
+    </mat-card-actions>
+  </mat-card>
+</section>

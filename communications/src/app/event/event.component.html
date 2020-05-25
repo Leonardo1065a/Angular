@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-content>
+        <section>
+            <h3>Value: {{ value }}</h3>
+            <app-child-item
+             [title]="title" 
+             (plusOne)="inBy(1)"
+             (plusTwo)="inBy(2)"
+             (minusOne)="inBy(-1)"
+             (minusTwo)="inBy(-2)"
+             (inc)="inBy($event)">
+            </app-child-item>
+        </section>
+    </mat-card-content>
+</mat-card>
